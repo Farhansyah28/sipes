@@ -235,7 +235,7 @@
                 },
 
                 get totalHarga() {
-                    return this.cart.reduce((total, item) => total + item.subtotal, 0);
+                    return this.cart.reduce((total, item) => total + parseInt(item.subtotal), 0);
                 },
 
                 addToCart(item) {
@@ -251,10 +251,10 @@
                         this.cart.push({
                             id: item.id,
                             nama: item.nama,
-                            harga_jual: item.harga_jual,
+                            harga_jual: parseInt(item.harga_jual),
                             qty: 1,
-                            subtotal: item.harga_jual,
-                            stok_total: item.stok_total
+                            subtotal: parseInt(item.harga_jual),
+                            stok_total: parseInt(item.stok_total)
                         });
                     }
                     this.search = '';

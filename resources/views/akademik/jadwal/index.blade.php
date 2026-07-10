@@ -162,7 +162,7 @@
                                                                     <span>{{ $jadwal->ustadz->nama_lengkap ?? '-' }}</span>
                                                                     <form action="{{ route('jadwal.destroy', $jadwal->id) }}" method="POST" class="inline" @click.stop>
                                                                         @csrf @method('DELETE')
-                                                                        <button type="submit" class="text-red-500 hover:text-red-700 text-[10px] bg-white px-1 rounded border border-red-200" onclick="return confirm('Hapus?')">âœ•</button>
+                                                                        <button type="submit" class="text-red-500 hover:text-red-700 text-[10px] bg-white px-1 rounded border border-red-200" onclick="return confirm('Hapus?')">•</button>
                                                                     </form>
                                                                 </div>
                                                             </div>
@@ -233,7 +233,7 @@
                                                                     <span class="bg-white px-1 rounded font-bold border border-purple-200">Kls: {{ $jadwal->kelas->nama ?? '-' }}</span>
                                                                     <form action="{{ route('jadwal.destroy', $jadwal->id) }}" method="POST" class="inline" @click.stop>
                                                                         @csrf @method('DELETE')
-                                                                        <button type="submit" class="text-red-500 hover:text-red-700 text-[10px] bg-white px-1 rounded border border-red-200" onclick="return confirm('Hapus?')">âœ•</button>
+                                                                        <button type="submit" class="text-red-500 hover:text-red-700 text-[10px] bg-white px-1 rounded border border-red-200" onclick="return confirm('Hapus?')">•</button>
                                                                     </form>
                                                                 </div>
                                                             </div>
